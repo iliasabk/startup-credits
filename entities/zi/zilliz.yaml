@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gsz4nr3ve627gf06txt36d
+  slug: zilliz
+  slug_aliases: []
+  name: Zilliz
+  domains:
+    - value: zilliz.com
+      role: primary
+      valid_from: 2026-09-14T21:35:00.000Z
+  category: databases
+profile:
+  description: Zilliz builds Zilliz Cloud, a fully managed vector database service, and maintains the open-source Milvus vector database.
+  summary: Zilliz provides Zilliz Cloud, a managed vector database built on the open-source Milvus project, for AI retrieval workloads.
+  links:
+    site: https://zilliz.com/
+sources:
+  - source_id: src_f251fde5645c13957c1246abdeec09c4283341501fe75c72ca45993c2db25bc1
+    url: https://zilliz.com/zilliz-for-startups
+programs: []
+offers:
+  - offer_id: off_01m2gsz4prwkrz39caq43zdafm
+    offer_slug: zilliz-ai-startup-program
+    offer_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: Early-stage AI startups building retrieval-powered applications can apply for Zilliz Cloud discounts, technical guidance, and go-to-market support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T21:35:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Program discounts on Zilliz Cloud for development, testing, and early production workloads.
+          kind: other
+        - benefit_id: ben_02
+          description: Technical guidance on architecture reviews, performance optimization, and vector search best practices.
+          kind: other
+        - benefit_id: ben_03
+          description: Go-to-market exposure through joint marketing activities including case studies, blogs, webinars, and ecosystem showcases.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup building retrieval-powered AI applications such as RAG, semantic search, multimodal, or agent-based workflows.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m2gsz4nr3ve627gf06txt36d
+      access_operator_entity_id: ent_01m2gsz4nr3ve627gf06txt36d
+    access:
+      availability: public
+      instructions: Submit the application form on the Zilliz for Startups page.
+      method: form
+      url: https://zilliz.com/zilliz-for-startups
+    source_ids:
+      - src_f251fde5645c13957c1246abdeec09c4283341501fe75c72ca45993c2db25bc1
