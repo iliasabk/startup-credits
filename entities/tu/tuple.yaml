@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2jb7k9ngv49epbra969h2c3
+  slug: tuple
+  slug_aliases: []
+  name: Tuple
+  domains:
+    - value: tuple.app
+      role: primary
+      valid_from: 2026-09-15T10:54:02.000Z
+  category: devtools-other
+profile:
+  summary: Tuple is a remote pair programming application for macOS with low-latency screen sharing and control.
+  description: Tuple is a remote pair programming tool for macOS offering low-latency screen sharing, mouse and keyboard control, and calls.
+  links:
+    site: https://tuple.app
+sources:
+  - source_id: src_3266d66dd4b6a80c6b8bf249be26964001586aecfc3fc2f1866c646274418128
+    url: https://tuple.app/startups
+programs:
+  - program_id: prg_01m2jb7kaxh81m415f0z0sgtfq
+    program_slug: tuple-startup-plan
+    program_slug_aliases: []
+    title: Tuple Startup Plan
+    summary: Discounted first year of Tuple for small early-stage startups.
+    source_ids:
+      - src_3266d66dd4b6a80c6b8bf249be26964001586aecfc3fc2f1866c646274418128
+offers:
+  - offer_id: off_01m2jb7kaxff3jref5sqsf4t4v
+    program_id: prg_01m2jb7kaxh81m415f0z0sgtfq
+    offer_slug: tuple-startup-plan
+    offer_slug_aliases: []
+    title: Tuple Startup Plan — 90% off first year
+    summary: Eligible startups receive 90% off their first year of Tuple.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-15T10:54:02.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90% off the first year of Tuple
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a startup founded within the last 2 years with fewer than 50 people, and must attach formation documents validating the founding date and startup name.
+    roles:
+      terms_authority_entity_id: ent_01m2jb7k9ngv49epbra969h2c3
+      access_operator_entity_id: ent_01m2jb7k9ngv49epbra969h2c3
+    access:
+      availability: public
+      method: form
+      url: https://tuple.app/startups
+    source_ids:
+      - src_3266d66dd4b6a80c6b8bf249be26964001586aecfc3fc2f1866c646274418128
