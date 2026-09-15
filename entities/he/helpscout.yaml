@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2jcdtw4xqkaebvnjjb3vjqr
+  slug: helpscout
+  slug_aliases: []
+  name: Help Scout
+  domains:
+    - value: helpscout.com
+      role: primary
+      valid_from: 2026-09-15T11:14:55.000Z
+  category: support
+profile:
+  summary: Help Scout provides a customer support platform with shared inbox, AI answers, knowledge base, and messaging.
+  description: Help Scout is a customer support platform offering a shared inbox, AI-powered answers, knowledge base, and customer messaging.
+  links:
+    site: https://www.helpscout.com
+sources:
+  - source_id: src_d6e9c7b20ba8e2b152c86e82b45b32759f8f8b7da7c3528bfd20319013865e2d
+    url: https://www.helpscout.com/startups
+programs:
+  - program_id: prg_01m2jcdtwj9p6w6wjy089b9rx5
+    program_slug: help-scout-for-startups
+    program_slug_aliases: []
+    title: Help Scout for Startups
+    summary: Startup program offering the Help Scout platform free for the first six months to qualifying early-stage tech startups.
+    source_ids:
+      - src_d6e9c7b20ba8e2b152c86e82b45b32759f8f8b7da7c3528bfd20319013865e2d
+offers:
+  - offer_id: off_01m2jcdtwj58wmx5yfaexj55pb
+    program_id: prg_01m2jcdtwj9p6w6wjy089b9rx5
+    offer_slug: help-scout-for-startups
+    offer_slug_aliases: []
+    title: Help Scout for Startups — 6 months free
+    summary: Qualifying new Help Scout customers that are incorporated tech startups under two years old and under $1M ARR get the platform free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-15T11:14:55.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Help Scout platform free for the first six months
+          kind: free-service
+          service: Help Scout
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a new Help Scout customer, an incorporated tech startup less than two years old, and generating under $1 million in annual recurring revenue (ARR).
+    roles:
+      terms_authority_entity_id: ent_01m2jcdtw4xqkaebvnjjb3vjqr
+      access_operator_entity_id: ent_01m2jcdtw4xqkaebvnjjb3vjqr
+    access:
+      availability: public
+      method: form
+      url: https://www.helpscout.com/startups
+    source_ids:
+      - src_d6e9c7b20ba8e2b152c86e82b45b32759f8f8b7da7c3528bfd20319013865e2d
